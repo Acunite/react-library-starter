@@ -9,14 +9,14 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "jsdom",
-    setupFiles: "./lib/setupTests.ts",
+    setupFiles: "./src/setupTests.ts",
     // you might want to enable it, if you have tests that rely on CSS
     // disabled by default since parsing CSS is slow
     css: false,
   },
   build: {
     lib: {
-      entry: resolve(__dirname, "lib/index.ts"),
+      entry: resolve(__dirname, "src/index.ts"),
       name: "MyLib",
       formats: ["es", "umd"],
       // the proper extensions will be added

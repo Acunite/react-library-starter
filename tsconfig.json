@@ -24,8 +24,7 @@
     ]
   },
   "include": [
-    "lib",
-    "global.d.ts"
+    "src"
   ],
   "references": [
     {
