@@ -29,6 +29,7 @@
     "eslint-plugin-react": "^7.30.1",
     "husky": "^8.0.0",
     "jsdom": "^20.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
     "typescript": "^4.7.4",
     "vite": "^3.0.7",
@@ -46,5 +47,9 @@
       "import": "./dist/my-lib.es.js",
       "require": "./dist/my-lib.umd.js"
     }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix",
+    "*": "prettier --ignore-unknown --write"
   }
 }
