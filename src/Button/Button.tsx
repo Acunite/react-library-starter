@@ -1,4 +1,5 @@
-import type { MouseEventHandler, ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from "react";
+import styles from "./Button.module.css";
 
 export type ButtonProps = {
   disabled?: boolean;
@@ -8,7 +9,7 @@ export type ButtonProps = {
 
 function Button({ disabled = false, onClick, children }: ButtonProps) {
   return (
-    <button disabled={disabled} onClick={onClick}>
+    <button disabled={disabled} onClick={onClick} className={styles.button}>
       {children}
     </button>
   );
